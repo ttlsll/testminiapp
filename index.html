@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1" />
+    <title>My Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+      body { font-family: system-ui, sans-serif; padding: 20px; }
+      h1 { color: #0088cc; }
+      button { padding: 10px 16px; font-size: 16px; border-radius: 8px; border: none; background: #0088cc; color: white; }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, Telegram Mini App 👋</h1>
+    <p>Это тестовый шаблон для твоего первого Mini App.</p>
+    <button onclick="Telegram.WebApp.sendData('ping')">Send “ping” to bot</button>
+    <script>
+      Telegram.WebApp.ready();
+    </script>
+  </body>
+</html>
